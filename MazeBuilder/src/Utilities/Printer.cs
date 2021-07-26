@@ -6,7 +6,7 @@ namespace MazeBuilder
 {
     public class Printer
     {
-        public void PrintMultiDimensionalArray(Cell[,] input)
+        public static void PrintMultiDimensionalArray(Cell[,] input)
         {
             for(var i = 0; i < input.GetLength(0); i++)
             {

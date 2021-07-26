@@ -8,11 +8,14 @@ namespace MazeBuilder
         static void Main(string[] args)
         {
             Console.WriteLine("Maze Generator!");
+            Console.WriteLine("");
+            var maze = new Maze(50);
 
-            var maze = new Maze(100);
+            Printer.PrintMultiDimensionalArray(maze._grid);
 
-            var printer = new Printer();
-            printer.PrintMultiDimensionalArray(maze._grid);
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to close");
+            Console.ReadKey();
         }
     }
 }
