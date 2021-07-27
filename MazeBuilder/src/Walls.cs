@@ -50,14 +50,6 @@ namespace MazeBuilder
 
         public void DeleteExploredWalls(Wall randomWall)
         {
-            foreach (var wall in walls.ToList())
-            {
-                if (wall == null)
-                {
-                    walls.Remove(wall);
-                    continue;
-                }
-            }
             walls.Remove(randomWall);
         }
     }
